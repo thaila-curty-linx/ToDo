@@ -19,7 +19,7 @@ export function TaskList() {
     if (!newTaskTitle) {
       return;
     }
-    const id = Math.floor(Math.random() * 100) + 1;
+    const id = Math.random();
     setTasks([...tasks, { id, title: newTaskTitle, isComplete: false }]);
     setNewTaskTitle("");
   }
